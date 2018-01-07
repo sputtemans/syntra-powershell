@@ -1,5 +1,6 @@
-Accountnaam;Voornaam;Achternaam;Wachtwoord;OU;Servernaam
-josd;jos;dirckx;Syntr@123;OU=SvenpOU,DC=svenp,DC=local;dc01.svenp.local
-annek;anne;kamels;Syntr@123;OU=SvenpOU,DC=svenp,DC=local;dc01.svenp.local
-finnj;finn;jeffers;Syntr@123;OU=SvenpOU,DC=svenp,DC=local;dc01.svenp.local
-dirkp;dirk;peeters;Syntr@123;OU=SvenpOU,DC=svenp,DC=local;dc01.svenp.local
+Accountnaam;Voornaam;Achternaam;Wachtwoord;
+josd;jos;dirckx;Syntr@123;
+annek;anne;kamels;Syntr@123;
+finnj;finn;jeffers;Syntr@123;
+dirkp;dirk;peeters;Syntr@123;
+svenp;sven;puttemans;Syntr@123
