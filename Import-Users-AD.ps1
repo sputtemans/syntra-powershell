@@ -1,4 +1,4 @@
-﻿Param (
+Param (
     [Parameter(Mandatory=$true)][string]$CsvLocatie
     )
  
@@ -9,9 +9,8 @@ foreach ($User in $Users)
     $Displayname = $User.Accountnaam           
     $UserFirstname = $User.Voornaam            
     $UserLastname = $User.Achternaam  
-    $Password = $User.Wachtwoord             
-    $OU = $User.'OU'                     
+    $Password = $User.Wachtwoord                                
     $Servername = $User.Servernaam          
 
-    New-ADUser -Name "$Displayname" -DisplayName "$Displayname" -GivenName "$UserFirstname" -Surname "$UserLastname" -AccountPassword (ConvertTo-SecureString $Password -AsPlainText -Force) -Enabled $true -Path "$OU" -ChangePasswordAtLogon $false -server $Servername
+    New-ADUser -Name "$Displayname" -DisplayName "$Displayname" -GivenName "$UserFirstname" -Surname "$UserLastname" -AccountPassword (ConvertTo-SecureString $Password -AsPlainText -Force) -Enabled $true -ChangePasswordAtLogon $false
 }
